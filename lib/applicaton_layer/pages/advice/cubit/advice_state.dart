@@ -7,9 +7,13 @@ abstract class AdviceCubitState extends Equatable {
   List<Object?> get props => [];
 }
 
-class AdviceInitial extends AdviceCubitState {}
+class AdviceInitial extends AdviceCubitState {
+  const AdviceInitial();
+}
 
-class AdviceStateLoading extends AdviceCubitState {}
+class AdviceStateLoading extends AdviceCubitState {
+  const AdviceStateLoading();
+}
 
 class AdviceStateLoaded extends AdviceCubitState {
   final String advice;
