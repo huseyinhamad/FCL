@@ -7,7 +7,7 @@ import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:mockito/annotations.dart';
 
-import 'advice_remote_datasource._test.mocks.dart';
+import 'advice_remote_datasource_test.mocks.dart';
 
 @GenerateNiceMocks([MockSpec<Client>()])
 void main() {
