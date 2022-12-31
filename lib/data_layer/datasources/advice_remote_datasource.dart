@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:fcl/applicaton_layer/core/constants/api_constants.dart';
 import 'package:fcl/data_layer/exceptions/exceptions.dart';
 import 'package:fcl/data_layer/models/advice_model.dart';
 import 'package:http/http.dart' as http;
@@ -18,10 +19,8 @@ class AdviceRemoteDataSourceImpl implements AdviceRemoteDataSource {
   @override
   Future<AdviceModel> getRandomAdviceFromApi() async {
     final response = await client.get(
-      Uri.parse('https://api.flutter-community.com/api/v1/advice'),
-      headers: {
-        "content-type": "application/json",
-      },
+      Uri.parse(ApiConstants.baseURL),
+      headers: ApiConstants.baseHeader,
     );
 
     if (response.statusCode != 200) {
