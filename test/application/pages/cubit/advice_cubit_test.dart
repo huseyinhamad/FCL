@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:dartz/dartz.dart';
 import 'package:fcl/applicaton_layer/core/constants/api_constants.dart';
 import 'package:fcl/applicaton_layer/pages/advice/cubit/advice_cubit.dart';
